@@ -14,44 +14,59 @@ namespace Bakery.Tests
       Assert.AreEqual(true, pastryOrder.IsPastry());
     }
 
-  }
-
-  [TestClass]
-  public class BreadTests
-  {
     [TestMethod]
-    public void IsBread_CostOfOneLoaf_True()
+    public void CostOfPastry_CostofOnePastry_Int()
     {
-      int breadQuantity = 1;
-      Bread breadOrder = new Bread(breadQuantity);
-      Assert.AreEqual(true, breadOrder.IsBread());
-    }
-    
-    [TestMethod]
-    public void CostOfBread_CostOfOneLoaf_Int()
-    {
-      int breadQuantity = 1;
-      double breadCost = 5;
-      Bread breadOrder = new Bread(breadQuantity);
-      Assert.AreEqual(breadCost, breadOrder.CostOfBread());
+      // int breadQuantity = 1;
+      int pastryCost = 2;
+      Pastry pastryOrder = new Pastry();
+      Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
     }
 
-    [TestMethod]
-    public void CostOfBread_CostOfTwoLoaves_Int()
-    {
-      int breadQuantity = 2;
-      double breadCost = 10;
-      Bread breadOrder = new Bread(breadQuantity);
-      Assert.AreEqual(breadCost, breadOrder.CostOfBread());
-    }
 
-    [TestMethod]
-    public void CostOfBread_ThirdLoafIsFree_Int()
+
+
+
+
+
+
+    [TestClass]
+    public class BreadTests
     {
-      int breadQuantity = 3;
-      double costOfBread = 10;
-      Bread breadOrder = new Bread(breadQuantity);
-      Assert.AreEqual(costOfBread, breadOrder.CostOfBread());
+      [TestMethod]
+      public void IsBread_CostOfOneLoaf_True()
+      {
+        int breadQuantity = 1;
+        Bread breadOrder = new Bread(breadQuantity);
+        Assert.AreEqual(true, breadOrder.IsBread());
+      }
+      
+      [TestMethod]
+      public void CostOfBread_CostOfOneLoaf_Int()
+      {
+        int breadQuantity = 1;
+        double breadCost = 5;
+        Bread breadOrder = new Bread(breadQuantity);
+        Assert.AreEqual(breadCost, breadOrder.CostOfBread());
+      }
+
+      [TestMethod]
+      public void CostOfBread_CostOfTwoLoaves_Int()
+      {
+        int breadQuantity = 2;
+        double breadCost = 10;
+        Bread breadOrder = new Bread(breadQuantity);
+        Assert.AreEqual(breadCost, breadOrder.CostOfBread());
+      }
+
+      [TestMethod]
+      public void CostOfBread_ThirdLoafIsFree_Int()
+      {
+        int breadQuantity = 3;
+        double costOfBread = 10;
+        Bread breadOrder = new Bread(breadQuantity);
+        Assert.AreEqual(costOfBread, breadOrder.CostOfBread());
+      }
     }
   }
 }

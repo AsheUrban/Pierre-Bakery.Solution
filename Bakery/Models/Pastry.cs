@@ -10,5 +10,11 @@ namespace Bakery.Models
     {
       return true;
     }
+
+    public int CostofPastry()
+    {
+      int pastryCost = 2;
+      return pastryCost;
+    }
   }
 }
