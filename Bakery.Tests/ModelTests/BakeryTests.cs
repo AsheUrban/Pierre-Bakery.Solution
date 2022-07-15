@@ -18,7 +18,7 @@ namespace Bakery.TestTools
     public void CostOfBread_CostOfOneLoaf_Int()
     {
       int breadQuantity = 1;
-      int breadCost = 5;
+      double breadCost = 5;
       Bread breadOrder = new Bread(breadQuantity);
       Assert.AreEqual(breadCost, breadOrder.CostOfBread());
     }
@@ -27,7 +27,7 @@ namespace Bakery.TestTools
     public void CostOfBread_CostOfTwoLoaves_Int()
     {
       int breadQuantity = 2;
-      int breadCost = 10;
+      double breadCost = 10;
       Bread breadOrder = new Bread(breadQuantity);
       Assert.AreEqual(breadCost, breadOrder.CostOfBread());
     }

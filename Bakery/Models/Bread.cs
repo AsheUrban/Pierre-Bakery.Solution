@@ -6,16 +6,20 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    private int _Price = 5;
-    public int Quantity;
+    private static double _Price = 5;
+    public int Quantity { get; set; }
 
-    //Public auto-implemented properties will go here!
 
-    //Constructor will go here!
+    public static double Price
+    {
+      get { return _Price; }
+      set { _Price = value; }
+    }
 
     public Bread(int quantity)
     {
       Quantity = quantity;
+      _Price = Price;
     }
 
     public bool IsBread()
@@ -23,9 +27,9 @@ namespace Bakery.Models
       return true;
     }
   
-    public int CostOfBread()
+    public double CostOfBread()
     {
-      int breadTotal = 0;
+      double breadTotal = 0;
       for (int index = 0; index <= Quantity; index ++)
       {
         if (index == 0)
