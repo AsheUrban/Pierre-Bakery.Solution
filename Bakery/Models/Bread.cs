@@ -6,7 +6,7 @@ namespace Bakery.Models
   {
     private static double _Price = 5;
     private double _FreeLoaf;
-    public int Quantity { get; set; }
+    public int BreadQuantity { get; set; }
 
 
     public static double Price
@@ -15,9 +15,9 @@ namespace Bakery.Models
       set { _Price = value; }
     }
 
-    public Bread(int quantity)
+    public Bread(int breadQuantity)
     {
-      Quantity = quantity;
+      BreadQuantity = breadQuantity;
       _FreeLoaf = 5;
       _Price = Price;
     }
@@ -30,7 +30,7 @@ namespace Bakery.Models
     public double CostOfBread()
     {
       double breadTotal = 0;
-      for (int index = 0; index <= Quantity; index ++)
+      for (int index = 0; index <= BreadQuantity; index ++)
       {
         if (index == 0)
         {

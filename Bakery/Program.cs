@@ -20,7 +20,7 @@ namespace Bakery.Models
         Console.WriteLine("How many loaves of bread to you want?");
         int breadOrder = int.Parse(Console.ReadLine());
         Bread userBreadOrder = new Bread(breadOrder);
-        Console.WriteLine("For " + userBreadOrder.Quantity + " loaves of bread, your total is $" + userBreadOrder.CostOfBread());
+        Console.WriteLine("For " + userBreadOrder.BreadQuantity + " loaves of bread, your total is $" + userBreadOrder.CostOfBread());
       }
     }
   }

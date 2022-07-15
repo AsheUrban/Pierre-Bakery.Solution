@@ -19,7 +19,7 @@ namespace Bakery.Tests
     {
       int pastryCost = 2;
       Pastry pastryOrder = new Pastry();
-      Assert.AreEqual(pastryCost, pastryOrder.CostOfBread());
+      Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
     }
 
 
