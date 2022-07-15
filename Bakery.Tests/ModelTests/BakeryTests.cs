@@ -10,6 +10,7 @@ namespace Bakery.TestTools
     public void IsBread_CostOfOneLoaf_True()
     {
       Bread breadOrder = new Bread();
+      Assert.AreEqual(true, breadOrder.IsBread());
     }
     
     [TestMethod]
