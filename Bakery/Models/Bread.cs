@@ -18,7 +18,6 @@ namespace Bakery.Models
 
     public int CostOfBread()
     {
-      //Logic will go here
       return 5;
     }
 
