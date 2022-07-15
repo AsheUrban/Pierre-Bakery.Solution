@@ -4,10 +4,18 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-    public bool IsPastry(int quantity)
+    public bool IsPastry()
     {
-      return false;
+      return true;
     }
+
+    public int CostOfBread()
+    {
+      int pastryTotal = 2;
+      return pastryTotal;
+    }
+
+    
  
 
 
