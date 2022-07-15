@@ -7,6 +7,7 @@ namespace Bakery.Models
   public class Bread
   {
     private static double _Price = 5;
+    private double _FreeLoaf;
     public int Quantity { get; set; }
 
 
@@ -19,6 +20,7 @@ namespace Bakery.Models
     public Bread(int quantity)
     {
       Quantity = quantity;
+      _FreeLoaf = 5;
       _Price = Price;
     }
 
@@ -35,6 +37,10 @@ namespace Bakery.Models
         if (index == 0)
         {
           breadTotal += 0;
+        }
+        else if (index == 3)
+        {
+          breadTotal += _Price - _FreeLoaf;
         }
         else
         {

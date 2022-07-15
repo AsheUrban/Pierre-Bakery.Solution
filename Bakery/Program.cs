@@ -11,6 +11,17 @@ namespace Bakery.Models
     {
       Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("A loaf of bread costs $" + Bread.Price);
+      Console.WriteLine("Every third loaf of bread is FREE!");
+      Console.WriteLine("A pastry is $..." + "OR get 3 for...");
+      Console.WriteLine("Would you like a loaf of bread?");
+      string response = Console.ReadLine();
+      if (response == "yes")
+      {
+        Console.WriteLine("How many loaves of bread to you want?");
+        int breadOrder = int.Parse(Console.ReadLine());
+        Bread userBreadOrder = new Bread(breadOrder);
+        Console.WriteLine("For " + userBreadOrder.Quantity + " loaves of bread, your total is $" + userBreadOrder.CostOfBread());
+      }
     }
   }
 }
