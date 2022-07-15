@@ -10,15 +10,35 @@ namespace Bakery.Tests
     [TestMethod]
     public void IsPastry_CostofOnePastry_True()
     {
-      Pastry pastryOrder = new Pastry();
+      int pastryQuantity = 1;
+      Pastry pastryOrder = new Pastry(pastryQuantity);
       Assert.AreEqual(true, pastryOrder.IsPastry());
     }
 
     [TestMethod]
     public void CostOfPastry_CostOfOnePastry_Int()
     {
-      int pastryCost = 2;
-      Pastry pastryOrder = new Pastry();
+      int pastryQuantity = 1;
+      double pastryCost = 2;
+      Pastry pastryOrder = new Pastry(pastryQuantity);
+      Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
+    }
+
+    [TestMethod]
+    public void CostOfPastry_CostOfThreePastries_Int()
+    {
+      int pastryQuantity = 3;
+      double pastryCost = 5;
+      Pastry pastryOrder = new Pastry(pastryQuantity);
+      Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
+    }
+
+    [TestMethod]
+    public void CostOfPastry_CostOfFourPastries_Int()
+    {
+      int pastryQuantity = 4;
+      int pastryCost = 7;
+      Pastry pastryOrder = new Pastry(pastryQuantity);
       Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
     }
 

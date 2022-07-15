@@ -12,7 +12,6 @@ namespace Bakery.Models
       Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("A loaf of bread costs $" + Bread.Price);
       Console.WriteLine("Every third loaf of bread is FREE!");
-      // Console.WriteLine("A pastry is $..." + "OR get 3 for...");
       Console.WriteLine("Would you like a loaf of bread?");
       string response = Console.ReadLine();
       if (response == "yes")
@@ -22,6 +21,24 @@ namespace Bakery.Models
         Bread userBreadOrder = new Bread(breadOrder);
         Console.WriteLine("For " + userBreadOrder.BreadQuantity + " loaves of bread, your total is $" + userBreadOrder.CostOfBread());
       }
+      else
+      {
+        Console.WriteLine("Thats Ok! How about a delicious pastry instead?");
+      }
+
+      // Console.WriteLine("Would you like a pastry? Pastries are $2, OR buy anywhere from 3 - 10 and get a dollar off!");
+      // string response = Console.ReadLine();
+      // if (response == "yes")
+      // {
+      //   Console.WriteLine("How many pastries do you want?");
+      //   int pastryOrder = int.Parse(Console.ReadLine());
+      //   Pastry userPastryOrder = new Pastry(pastryOrder);
+      //   Console.WriteLine("For " + userPastryOrder.PastryQuantity + " pastries, your total is $ " + userPastryOrder.CostOfPastry());
+      // }
+      // else
+      // {
+
+      // }
     }
   }
 }
