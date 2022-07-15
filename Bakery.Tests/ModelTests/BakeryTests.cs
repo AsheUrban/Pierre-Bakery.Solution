@@ -31,5 +31,14 @@ namespace Bakery.TestTools
       Bread breadOrder = new Bread(breadQuantity);
       Assert.AreEqual(breadCost, breadOrder.CostOfBread());
     }
+
+    [TestMethod]
+    public void CostOfBread_ThirdLoafIsFree_Int()
+    {
+      int breadQuantity = 3;
+      double costOfBread = 10;
+      Bread breadOrder = new Bread(breadQuantity);
+      Assert.AreEqual(costOfBread, breadOrder.CostOfBread());
+    }
   }
 }
