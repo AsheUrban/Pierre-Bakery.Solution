@@ -19,7 +19,7 @@ namespace Bakery.Tests
     public void CostOfPastry_CostOfOnePastry_Int()
     {
       int pastryQuantity = 1;
-      double pastryCost = 2;
+      int pastryCost = 2;
       Pastry pastryOrder = new Pastry(pastryQuantity);
       Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
     }
@@ -28,7 +28,7 @@ namespace Bakery.Tests
     public void CostOfPastry_CostOfThreePastries_Int()
     {
       int pastryQuantity = 3;
-      double pastryCost = 5;
+      int pastryCost = 5;
       Pastry pastryOrder = new Pastry(pastryQuantity);
       Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
     }
