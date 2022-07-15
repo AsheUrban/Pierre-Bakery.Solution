@@ -1,6 +1,6 @@
 using System;
-// using System.Collections.Generic;
-// using System.Linq;
+using System.Collections.Generic;
+using System.Linq;
 using Bakery.Models;
 
 namespace Bakery.Models
@@ -12,7 +12,7 @@ namespace Bakery.Models
       Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("A loaf of bread costs $" + Bread.Price);
       Console.WriteLine("Every third loaf of bread is FREE!");
-      Console.WriteLine("A pastry is $..." + "OR get 3 for...");
+      // Console.WriteLine("A pastry is $..." + "OR get 3 for...");
       Console.WriteLine("Would you like a loaf of bread?");
       string response = Console.ReadLine();
       if (response == "yes")

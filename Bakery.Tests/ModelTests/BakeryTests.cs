@@ -1,8 +1,19 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
 
-namespace Bakery.TestTools
+namespace Bakery.Tests
 {
+  [TestClass]
+  public class PastryTests
+  {
+    [TestMethod]
+    public void isPastry_CostofOnePastry_True()
+    {
+
+    }
+
+  }
+
   [TestClass]
   public class BreadTests
   {
