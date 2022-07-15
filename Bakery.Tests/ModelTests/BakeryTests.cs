@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Bakery.Models;
 
@@ -7,9 +8,10 @@ namespace Bakery.Tests
   public class PastryTests
   {
     [TestMethod]
-    public void isPastry_CostofOnePastry_True()
+    public void IsPastry_CostofOnePastry_True()
     {
-
+      Pastry pastryOrder = new Pastry();
+      Assert.AreEqual(true, pastryOrder.IsPastry());
     }
 
   }

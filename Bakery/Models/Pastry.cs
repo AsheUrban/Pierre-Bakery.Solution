@@ -8,7 +8,7 @@ namespace Bakery.Models
 
     public bool IsPastry()
     {
-      return false;
+      return true;
     }
   }
 }
