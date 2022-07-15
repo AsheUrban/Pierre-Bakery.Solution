@@ -7,15 +7,15 @@ namespace Bakery.TestTools
   public class BreadTests
   {
     [TestMethod]
-    public void BreadCost_CostOneLoafNoDiscount_True()
+    public void CostOfBread_CostOfOneLoaf_Int()
     {
       // //Arrange
       // int breadQuantity = 1;
-      // int breadCost = 5;
-      //ACT
-      // Bread breadOrder = new Bread();
-      //ASSERT GOES HERE!
-      // Assert.AreEqual(breadCost, breadOrder.CostOfBread());
+      int breadCost = 5;
+      // ACT
+      Bread breadOrder = new Bread();
+      // ASSERT GOES HERE!
+      Assert.AreEqual(breadCost, breadOrder.CostOfBread());
     }
   }
 }

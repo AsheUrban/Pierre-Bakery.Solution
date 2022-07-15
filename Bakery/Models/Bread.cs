@@ -9,10 +9,10 @@ namespace Bakery.Models
     //Public auto-implemented properties will go here!
     //Constructor will go here!
 
-    public bool CostOfBread()
+    public int CostOfBread()
     {
       //Logic will go here
-      return true;
+      return 5;
     }
 
   }
