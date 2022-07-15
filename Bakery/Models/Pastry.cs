@@ -4,17 +4,12 @@ namespace Bakery.Models
 {
   public class Pastry
   {
-
-
-    public bool IsPastry()
+    public bool IsPastry(int quantity)
     {
-      return true;
+      return false;
     }
+ 
 
-    public int CostofPastry()
-    {
-      int pastryCost = 2;
-      return pastryCost;
-    }
+
   }
 }
