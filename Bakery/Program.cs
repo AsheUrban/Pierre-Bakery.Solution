@@ -33,7 +33,6 @@ namespace Bakery.Models
         Pastry userPastryOrder = new Pastry(pastryOrder);
         Console.WriteLine("For " + userPastryOrder.PastryQuantity + " pastries, your total is $" + userPastryOrder.CostOfPastry());
       }
-
     }
   }
 }

@@ -43,7 +43,7 @@ All functionality for the models should be tested.
 
 ## Known Bugs
 
-* _UI needs to be cleaned up. If you say no to bread, the program will end. Say yes, and you'll be able to order pastries as well._
+* _If you say no to pastries there is an unhandled exception._
 
 ## License
 
