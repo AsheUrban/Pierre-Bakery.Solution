@@ -51,6 +51,6 @@ All functionality for the models should be tested.
 
 ## Contact Information
 
-_Please contact us with any questions or contribuitions, ashe@goldentongue.com_
+_Please contact me with any questions or contribuitions, ashe@goldentongue.com_
 
 Copyright(c) July 2022 Ashe Urban
