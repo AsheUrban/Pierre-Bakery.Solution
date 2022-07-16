@@ -45,6 +45,7 @@ All functionality for the models should be tested.
 
 * _Words not equal to yes or no will advance the prompts_
 * _Very little exception handling on responses in Console UI_
+* _No combined total for bread and pastries is read_
 
 ## License
 

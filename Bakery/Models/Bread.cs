@@ -35,7 +35,7 @@ namespace Bakery.Models
         {
           breadTotal += 0;
         }
-        else if (index == 3)
+        else if (index % 3 == 0)
         {
           breadTotal += _Price - _FreeLoaf;
         }
