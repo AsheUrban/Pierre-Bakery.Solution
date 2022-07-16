@@ -42,9 +42,6 @@ namespace Bakery.Tests
       Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
     }
 
-
-
-
     [TestClass]
     public class BreadTests
     {

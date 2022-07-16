@@ -43,7 +43,7 @@ All functionality for the models should be tested.
 
 ## Known Bugs
 
-* _Pastry order function/ UI is not final. Bakery works!_
+* _Pastry order function/ UI is not works, but does not perform the correct math yet for the discount_
 
 ## License
 
