@@ -12,7 +12,7 @@ namespace Bakery.Models
       Console.WriteLine("Welcome to Pierre's Bakery!");
       Console.WriteLine("A loaf of bread costs $" + Bread.Price);
       Console.WriteLine("Every third loaf of bread is FREE!");
-      Console.WriteLine("Would you like a loaf of bread?");
+      Console.WriteLine("Would you like a loaf of bread? (yes/no)");
       string response = Console.ReadLine();
       if (response == "yes")
       {
@@ -23,10 +23,16 @@ namespace Bakery.Models
       }
       else
       {
-        Console.WriteLine("Thats Ok! How about a delicious pastry instead?");
+        Console.WriteLine("How about a delicious pastry instead?");
       }
-
-      Console.WriteLine("Would you like a pastry? Pastries are $2, OR buy anywhere from 3 - 8 and get a dollar, or two, off depending on quantity!");
+        Console.WriteLine("Pastries are $2, OR buy anywhere from 3 - 8 and get a dollar, or two, off depending on quantity!");
+        Console.WriteLine("Would you like a pastry? (yes/no)");
+        string responseTwo = Console.ReadLine();
+        if (responseTwo == "no")
+      {
+        Console.WriteLine("That's ok! Thank you for coming by!");
+      }
+      else
       {
         Console.WriteLine("How many pastries do you want?");
         int pastryOrder = int.Parse(Console.ReadLine());

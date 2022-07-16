@@ -43,7 +43,7 @@ All functionality for the models should be tested.
 
 ## Known Bugs
 
-* _If you say no to pastries there is an unhandled exception._
+* _None for now_
 
 ## License
 
