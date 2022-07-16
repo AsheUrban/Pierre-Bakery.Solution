@@ -4,6 +4,8 @@ using Bakery.Models;
 
 namespace Bakery.Tests
 {
+  //PASTRY TESTS
+
   [TestClass]
   public class PastryTests
   {
@@ -68,6 +70,8 @@ namespace Bakery.Tests
       Pastry pastryOrder = new Pastry(pastryQuantity);
       Assert.AreEqual(pastryCost, pastryOrder.CostOfPastry());
     }
+
+    //BREAD TESTS
 
     [TestClass]
     public class BreadTests
