@@ -8,7 +8,6 @@ namespace Bakery.Models
     private double _FreeLoaf;
     public int BreadQuantity { get; set; }
 
-
     public static double Price
     {
       get { return _Price; }
