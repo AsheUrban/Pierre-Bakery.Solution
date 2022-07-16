@@ -34,7 +34,7 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void CostOfPastry_CostOfFourPastries_Int()
+    public void CostOfPastry_CostOfMorePastries_Int()
     {
       int pastryQuantity = 4;
       int pastryCost = 7;
