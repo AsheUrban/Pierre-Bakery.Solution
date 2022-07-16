@@ -38,6 +38,10 @@ namespace Bakery.Models
         {
           pastryTotal += _Price - _Discount;
         }
+        else if (index == 6)
+        {
+          pastryTotal += _Price - _Discount;
+        }
         else
         {
           pastryTotal += _Price;

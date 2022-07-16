@@ -43,7 +43,7 @@ All functionality for the models should be tested.
 
 ## Known Bugs
 
-* _Pastry order function/ UI is not works, but does not perform the correct math yet for the discount_
+* _UI needs to be cleaned up. If you say no to bread, the program will end. Say yes, and you'll be able to order pastries as well._
 
 ## License
 
