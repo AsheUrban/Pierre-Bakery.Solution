@@ -43,7 +43,7 @@ All functionality for the models should be tested.
 
 ## Known Bugs
 
-* _None for now_
+* _Words not equal to yes or no will advance the prompts_
 
 ## License
 
