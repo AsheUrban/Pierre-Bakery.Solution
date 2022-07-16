@@ -17,7 +17,6 @@ namespace Bakery.Models
     public Pastry(int pastryQuantity)
     {
       PastryQuantity = pastryQuantity;
-      // _Discount = 1;
       _Price = Price;
     }
 
@@ -25,7 +24,6 @@ namespace Bakery.Models
     {
       return true;
     }
-
 
     public int CostOfPastry()
     {
@@ -36,7 +34,7 @@ namespace Bakery.Models
         {
           pastryTotal += 0;
         }
-        else if (index == 3 || index == 4)
+        else if (index == 3)
         {
           pastryTotal += _Price - _Discount;
         }
@@ -47,10 +45,5 @@ namespace Bakery.Models
       }
       return pastryTotal;
     }
-
-    
- 
-
-
   }
 }

@@ -26,19 +26,18 @@ namespace Bakery.Models
         Console.WriteLine("Thats Ok! How about a delicious pastry instead?");
       }
 
-      // Console.WriteLine("Would you like a pastry? Pastries are $2, OR buy anywhere from 3 - 10 and get a dollar off!");
-      // string response = Console.ReadLine();
-      // if (response == "yes")
-      // {
-      //   Console.WriteLine("How many pastries do you want?");
-      //   int pastryOrder = int.Parse(Console.ReadLine());
-      //   Pastry userPastryOrder = new Pastry(pastryOrder);
-      //   Console.WriteLine("For " + userPastryOrder.PastryQuantity + " pastries, your total is $ " + userPastryOrder.CostOfPastry());
-      // }
-      // else
-      // {
+      Console.WriteLine("Would you like a pastry? Pastries are $2, OR buy anywhere from 3 - 10 and get a dollar off!");
+      if (response == "yes")
+      {
+        Console.WriteLine("How many pastries do you want?");
+        int pastryOrder = int.Parse(Console.ReadLine());
+        Pastry userPastryOrder = new Pastry(pastryOrder);
+        Console.WriteLine("For " + userPastryOrder.PastryQuantity + " pastries, your total is $ " + userPastryOrder.CostOfPastry());
+      }
+      else
+      {
 
-      // }
+      }
     }
   }
 }
